@@ -1,0 +1,165 @@
+// Local fonts
+@font-face {
+    font-family: "Book Antiqua";
+    src: url("../fonts/BKANT.TTF");
+}
+
+@font-face {
+    font-family: "Book Antiqua Italic";
+    src: url("../fonts/ANTQUAI.TTF");
+}
+
+@font-face {
+    font-family: "Book Antiqua Bold";
+    src: url("../fonts/ANTQUAB.TTF");
+}
+
+@font-face {
+    font-family: "Book Antiqua Bold Italic";
+    src: url("../fonts/ANTQUABI.TTF");
+}
+
+// External fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic');
+
+// Variables
+@antq: "Book Antiqua";
+@antqital: "Book Antiqua Italic";
+@antqbold: "Book Antiqua Bold";
+@antqboldital: "Book Antiqua Bold Italic";
+@roboto: "Roboto", sans-serif;
+
+// Main CSS
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+
+    font-size: 16px;
+    font-weight: normal;
+}
+
+header {
+    background-image: url(../images/main_bg.png);
+    background-repeat: no-repeat;
+
+    height: 960px;
+
+    position: relative;
+
+    .navigation {
+        padding: 10px 0;
+        justify-content: space-between;
+        position: relative;
+        font-family: @roboto;
+    }
+
+    .main_logo {
+        width: 170px;
+    }
+
+    .main_logo_img {
+        height: auto;
+        width: 160px;
+        position: absolute;
+    }
+
+    .header_menu {
+        margin: 0;
+        padding: 0;
+        margin-top: 15px;
+
+        li {
+            display: inline-flex;
+        }
+
+        .header_menu_link {
+            margin-right: 20px;
+            font-size: 18px;
+            color: #44261C;
+
+            transition: all 0.5s;
+
+            &:hover {
+                color: #924E27;
+            }
+        }
+    }
+
+    .conts {
+        display: flex;
+        position: relative;
+        margin-top: 15px;
+    }
+
+    .phone {
+        position: relative;
+
+        .phone_number {
+            font-size: 16px;
+        }
+
+        .recall {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0;
+            background: transparent;
+            color: #847187;
+            font-size: 12px;
+            border: none;
+
+            transition: all 0.5s;
+
+            &:hover {
+                color: #924E27;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .languages {
+        margin: 0;
+
+        .bet {
+            color: #CAA781;
+        }
+
+        li {
+            display: inline-flex;
+        }
+
+        .lang {
+            color: #847187;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #924E27;
+            }
+        }
+
+        .active {
+            color: #44261C;
+        }
+    }
+
+    .main_slide {
+        width: 100%;
+        height: auto;
+
+        position: relative;
+        // right: -119px;
+        top: -50px;
+    }
+
+    .main_title {
+        font-family: @antqboldital;
+        font-size: 75px;
+        text-transform: uppercase;
+        margin-top: 170px;
+    }
+}

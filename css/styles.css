@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic');
+@font-face {
+  font-family: "Book Antiqua";
+  src: url("../fonts/BKANT.TTF");
+}
+@font-face {
+  font-family: "Book Antiqua Italic";
+  src: url("../fonts/ANTQUAI.TTF");
+}
+@font-face {
+  font-family: "Book Antiqua Bold";
+  src: url("../fonts/ANTQUAB.TTF");
+}
+@font-face {
+  font-family: "Book Antiqua Bold Italic";
+  src: url("../fonts/ANTQUABI.TTF");
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  font-size: 16px;
+  font-weight: normal;
+}
+header {
+  background-image: url(../images/main_bg.png);
+  background-repeat: no-repeat;
+  height: 960px;
+  position: relative;
+}
+header .navigation {
+  padding: 10px 0;
+  justify-content: space-between;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+header .main_logo {
+  width: 170px;
+}
+header .main_logo_img {
+  height: auto;
+  width: 160px;
+  position: absolute;
+}
+header .header_menu {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+header .header_menu li {
+  display: inline-flex;
+}
+header .header_menu .header_menu_link {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #44261C;
+  transition: all 0.5s;
+}
+header .header_menu .header_menu_link:hover {
+  color: #924E27;
+}
+header .conts {
+  display: flex;
+  position: relative;
+  margin-top: 15px;
+}
+header .phone {
+  position: relative;
+}
+header .phone .phone_number {
+  font-size: 16px;
+}
+header .phone .recall {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  background: transparent;
+  color: #847187;
+  font-size: 12px;
+  border: none;
+  transition: all 0.5s;
+}
+header .phone .recall:hover {
+  color: #924E27;
+  text-decoration: underline;
+}
+header .languages {
+  margin: 0;
+}
+header .languages .bet {
+  color: #CAA781;
+}
+header .languages li {
+  display: inline-flex;
+}
+header .languages .lang {
+  color: #847187;
+  transition: all 0.5s;
+}
+header .languages .lang:hover {
+  color: #924E27;
+}
+header .languages .active {
+  color: #44261C;
+}
+header .main_slide {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -50px;
+}
+header .main_title {
+  font-family: "Book Antiqua Bold Italic";
+  font-size: 75px;
+  text-transform: uppercase;
+  margin-top: 170px;
+}
