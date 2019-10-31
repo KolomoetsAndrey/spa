@@ -402,7 +402,7 @@ header .socials .social_img:hover {
   left: 0;
   width: 100%;
   height: 520px;
-  background-image: url(../images/mass1.png);
+  background-image: var(--right-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -467,7 +467,7 @@ header .socials .social_img:hover {
   left: -50px;
   width: 110%;
   height: 520px;
-  background-image: url(../images/mass2.png);
+  background-image: var(--left-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -746,4 +746,122 @@ footer .copyright .footer_socials .fs_link {
 footer .copyright .footer_socials .fs_link:hover {
   text-decoration: none;
   filter: grayscale(1);
+}
+.recall_modal {
+  max-width: 460px;
+}
+.recall_modal form {
+  margin-top: 25px;
+}
+.recall_modal form ::placeholder {
+  color: #CAA781;
+}
+.recall_modal form ::-moz-placeholder {
+  color: #CAA781;
+}
+.recall_modal form ::-webkit-input-placeholder {
+  color: #CAA781;
+}
+.recall_modal form input {
+  display: block;
+  width: 85%;
+  margin-bottom: 25px;
+  margin-left: auto;
+  color: #000000;
+  font-size: 13px;
+  padding-left: 20px;
+  border: 1px solid #CAA781;
+  border-radius: 15px;
+}
+.recall_modal form input {
+  height: 40px;
+}
+.recall_modal form ul {
+  padding: 0;
+}
+.recall_modal form ul li {
+  list-style-type: none;
+  position: relative;
+}
+.recall_modal form ul li::before {
+  content: "";
+  background-image: url(../images/input_ellipse.png);
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -25px;
+}
+.recall_modal form .form_text {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #CAA781;
+  margin-left: 60px;
+}
+.recall_modal form .form_btn_outside {
+  border: 1px solid #924E27;
+  border-radius: 50px;
+  padding: 6px 7px;
+  width: max-content;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.recall_modal form .form_btn {
+  font-size: 30px;
+  color: #ffffff;
+  background: linear-gradient(to top, #924E27, #CAA781);
+  padding: 8px 70px;
+  border-radius: 42px;
+  border: none;
+  transition: all 0.5s;
+}
+.recall_modal form .form_btn:hover {
+  text-decoration: none;
+  filter: grayscale(1);
+}
+.modal-content {
+  padding: 30px;
+  border-radius: 0;
+}
+.modal-content .modal_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.modal_title {
+  font-family: "Book Antiqua";
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 20px;
+  color: #924E27;
+}
+.modal_title span {
+  color: #44261C;
+}
+.modal_title::before {
+  content: url(../images/modal_rounds.png);
+  height: 150px;
+  width: 135px;
+  position: absolute;
+  left: -20px;
+  top: -12px;
+}
+.close_btn {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  position: relative;
+  top: -20px;
+}
+.close_btn:hover {
+  cursor: pointer;
 }

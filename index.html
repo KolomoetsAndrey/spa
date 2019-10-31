@@ -32,7 +32,7 @@
                 <div class="conts">
                     <div class="phone">
                         <p class="phone_number">+48 (012) 345 67 89</p>
-                        <button class="recall">Popros o oddzwonienie</button>
+                        <button class="recall" data-toggle="modal" data-target="#recall">Popros o oddzwonienie</button>
                     </div>
                     <ul class="languages">
                         <li><a href="#" class="lang active">PL</a></li>
@@ -177,7 +177,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-12 type_img_right">
+                <div class="col-md-6 col-12 type_img_right" style=" --right-image: url(../images/mass1.png); " >
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@
     <section class="type_two">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-12 type_img_left">
+                <div class="col-md-6 col-12 type_img_left" style="--left-image: url(../images/mass2.png)">
                 </div>
                 <div class="col-md-6 col-12">
                     <h3 class="type_title">
@@ -354,6 +354,80 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="recall" tabindex="-1" role="dialog" aria-labelledby="recallLabel" aria-hidden="true">
+        <div class="modal-dialog recall_modal" role="document">
+            <div class="modal-content">
+                <div class="modal_header">
+                    <h3 class="modal_title">
+                        <span>Poproś o</span> oddzwonienie
+                    </h3>
+                    <button type="button" class="close_btn" data-dismiss="modal">
+                        <img src="images/close_btn.png" alt="">
+                    </button>
+                </div>
+                <div class="modal_body">
+                    <form>
+                        <ul>
+                            <li>
+                                <input type="text" class="name" id="name" placeholder="Imię i nazwisko *">
+                            </li>
+                            <li>
+                                <input type="text" class="phone" id="phone" placeholder="Numer telefonu *">
+                            </li>
+                        </ul>
+                        <p class="form_text">
+                            Klikając przycisk, wyrażasz zgodę na przetwarzanie danych osobowych.
+                        </p>
+                        <div class="form_btn_outside">
+                            <button type="button" class="form_btn">
+                                Prześlij
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="giftcard" tabindex="-1" role="dialog" aria-labelledby="giftcardLabel" aria-hidden="true">
+        <div class="modal-dialog recall_modal" role="document">
+            <div class="modal-content">
+                <div class="modal_header">
+                    <h3 class="modal_title">
+                        <span>Zamów</span> kartę podarunkową
+                    </h3>
+                    <button type="button" class="close_btn" data-dismiss="modal">
+                        <img src="images/close_btn.png" alt="">
+                    </button>
+                </div>
+                <div class="modal_body">
+                    <form>
+                        <ul>
+                            <li>
+                                <input type="text" class="name" id="name" placeholder="Imię i nazwisko *">
+                            </li>
+                            <li>
+                                <input type="text" class="phone" id="phone" placeholder="Numer telefonu *">
+                            </li>
+                            <li>
+                                <input type="text" class="object" id="object" placeholder="Nazwa odbiorcy karty *">
+                            </li>
+                        </ul>
+                        <p class="form_text">
+                            Klikając przycisk, wyrażasz zgodę na przetwarzanie danych osobowych.
+                        </p>
+                        <div class="form_btn_outside">
+                            <button type="button" class="form_btn">
+                                Prześlij
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>

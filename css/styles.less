@@ -401,7 +401,7 @@ header {
             width: 100%;
             height: 520px;
     
-            background-image: url(../images/mass1.png);
+            background-image: var(--right-image);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -481,7 +481,7 @@ header {
             width: 110%;
             height: 520px;
     
-            background-image: url(../images/mass2.png);
+            background-image: var(--left-image);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -823,5 +823,151 @@ footer {
                 }
             }
         }
+    }
+}
+
+// Modals
+.recall_modal {
+    max-width: 460px;
+
+    form {
+        margin-top: 25px;
+
+        ::placeholder {
+            color: #CAA781;
+        }
+
+        ::-moz-placeholder {
+            color: #CAA781;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #CAA781;
+        }
+
+        input {
+            display: block;
+            width: 85%;
+            margin-bottom: 25px;
+            margin-left: auto;
+
+            color: #000000;
+            font-size: 13px;
+            padding-left: 20px;
+
+            border: 1px solid #CAA781;
+            border-radius: 15px;
+        }
+
+        input {
+            height: 40px;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                list-style-type: none;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background-image: url(../images/input_ellipse.png);
+                    background-size: cover;
+                    height: 50px;
+                    width: 50px;
+                    position: absolute;
+
+                    display: block;
+
+                    top: 50%;
+                    margin-top: -25px;
+                }
+            }
+        }
+
+        .form_text {
+            font-size: 12px;
+            font-family: @roboto;
+            color: #CAA781;
+            margin-left: 60px;
+        }
+
+        .form_btn_outside {
+            border: 1px solid #924E27;
+            border-radius: 50px;
+            padding: 6px 7px;
+            width: max-content;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    
+        .form_btn {
+            font-size: 30px;
+            color: #ffffff;
+            background: linear-gradient(to top, #924E27, #CAA781);
+            padding: 8px 70px;
+            border-radius: 42px;
+            border: none;
+    
+            transition: all 0.5s;
+    
+            &:hover {
+                text-decoration: none;
+                filter: grayscale(1);
+            }
+        }
+    }
+}
+
+.modal-content {
+    padding: 30px;
+    border-radius: 0;
+
+    .modal_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+.modal_title {
+    font-family: @antq;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 20px;
+
+    color: #924E27;
+
+    span {
+        color: #44261C;
+    }
+
+    &::before {
+        content: url(../images/modal_rounds.png);
+        height: 150px;
+        width: 135px;
+        position: absolute;
+        left: -20px;
+        top: -12px;
+    }
+}
+
+.close_btn {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    position: relative;
+    top: -20px;
+
+    &:hover {
+        cursor: pointer;
     }
 }
