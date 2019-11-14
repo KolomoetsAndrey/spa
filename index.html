@@ -9,19 +9,31 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
 
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- OWL -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
 
 </head>
 <body>
-    <header class="header">
+    <!--ToTop-->
+    <button class="toTop" onclick="topFunction()" id="toTop"></button>
+    <!--End ToTop-->
+
+    <div class="mainmenu animated fadeInDown" id="mainmenu">
         <div class="container">
             <div class="row navigation">
                 <a href="#" class="main_logo">
                     <img src="images/logo.png" alt="" class="main_logo_img">
                 </a>
-                <ul class="header_menu">
+                <ul class="header_menu" id="header_menu">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closePhone()">&times;</a>
                     <li><a href="#" class="header_menu_link">Dom</a></li>
                     <li><a href="#" class="header_menu_link">Uslugi</a></li>
                     <li><a href="#" class="header_menu_link">Karty upomnikowe</a></li>
@@ -40,8 +52,48 @@
                         <li><a href="#" class="lang">EN</a></li>
                     </ul>
                 </div>
+                <div class="buttons">
+                    <button class="phone_btn" onclick="openPhone()">
+                        <img src="images/mobiphone.png" alt="" class="hamburger_img">
+                    </button>
+                    <ul class="languages_mobile">
+                        <li><a href="#" class="lang active">PL</a></li>
+                        <li class="bet">|</li>
+                        <li><a href="#" class="lang">EN</a></li>
+                    </ul>
+                    <button class="hamburger" onclick="openNav()">
+                        <img src="images/hamburger.png" alt="" class="hamburger_img">
+                    </button>
+                </div>
             </div>
         </div>
+    </div>
+
+    <ul class="header_menu_mobile" id="header_menu_mobile">
+        <li class="menu_header">
+            <img src="images/mobi_logo.png" alt="" class="menu_header_logo">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </li>
+        <li><a href="#" class="header_menu_link">Dom</a></li>
+        <li><a href="#" class="header_menu_link">Uslugi</a></li>
+        <li><a href="#" class="header_menu_link">Karty upomnikowe</a></li>
+        <li><a href="#" class="header_menu_link">Galeria</a></li>
+        <li><a href="#" class="header_menu_link">Kontakty</a></li>
+        <li><a href="#" class="header_menu_link">Rezerwacja</a></li>
+    </ul>
+
+    <ul class="phone_mobile" id="phone_mobile">
+        <li class="menu_header">
+            <img src="images/mobi_logo.png" alt="" class="menu_header_logo">
+            <a href="javascript:void(0)" class="closebtn" onclick="closePhone()">&times;</a>
+        </li>
+        <li class="phones_block">
+            <p class="phone_number">+48 (012) 345 67 89</p>
+            <button class="recall" data-toggle="modal" data-target="#recall">Popros o oddzwonienie</button>
+        </li>
+    </ul>
+
+    <header class="header animated fadeIn">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -84,7 +136,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-12 one">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-12 one">
                     <div class="reason_block">
                         <p class="number">
                             01
@@ -100,7 +152,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 two">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-12 two">
                     <div class="reason_block">
                         <p class="number">
                             02
@@ -118,7 +170,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-12 three">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-12 three">
                     <div class="reason_block">
                         <p class="number">
                             03
@@ -164,6 +216,9 @@
     <section class="type_one">
         <div class="container">
             <div class="row">
+                <div class="col-md-6 col-12 imagesinfoblock">
+                    <img src="images/mass1.png" alt="" class="infoblock_img">
+                </div>
                 <div class="col-md-6 col-12">
                     <h3 class="type_title">
                         Masaż klasyczny
@@ -186,6 +241,9 @@
     <section class="type_two">
         <div class="container">
             <div class="row">
+                <div class="col-md-6 col-12 imagesinfoblock">
+                    <img src="images/mass2.png" alt="" class="infoblock_img">
+                </div>
                 <div class="col-md-6 col-12 type_img_left" style="--left-image: url(../images/mass2.png)">
                 </div>
                 <div class="col-md-6 col-12">
@@ -214,9 +272,14 @@
                         <br>podarunkowe
                     </h2>
                     <p class="section_text">
-                            Karta podarunkowa- Masaże 
-                            Chcesz podarować spa w prezencie? Szukasz voucherów, zaproszeń, bonów na zabiegi spa? Zamów bon podarunkowy dla bliskiej osoby                            
+                        Karta podarunkowa- Masaże 
+                        Chcesz podarować spa w prezencie? Szukasz voucherów, zaproszeń, bonów na zabiegi spa? Zamów bon podarunkowy dla bliskiej osoby                            
                     </p>
+                </div>
+            </div>
+            <div class="row cards_mobi">
+                <div class="col-12">
+                    <img src="images/cards_mobi.png" alt="" class="cards_mobi_img">
                 </div>
             </div>
             <div class="row">
@@ -226,7 +289,7 @@
                     </div>
                     <div class="cards_btn">
                         <a href="#" class="cards_link">
-                            Zobacz wszystko
+                            Więcej informacji
                         </a>
                     </div>
                 </div>
@@ -310,7 +373,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row" id="container">
                 <div class="col-md-4 col-12 top_block">
                     <p class="adress">
                         Kacza 9 , lokal i, Warszawa
@@ -335,12 +398,12 @@
         <div class="container copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-7">
                         <p class="copyright_text">
                             Słowianka Spa& Masaz © Copyright 2019.  Opracowany przez SFdevelop
                         </p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5">
                         <ul class="footer_socials">
                             <li><a href="#" class="fs_link">
                                 <img src="images/fb.png" alt="">
@@ -433,5 +496,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/moment-with-locales.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

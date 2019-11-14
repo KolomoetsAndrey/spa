@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>...</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- OWL -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+    <!--ToTop-->
+    <button class="toTop" onclick="topFunction()" id="toTop"></button>
+    <!--End ToTop-->
+
+    <div class="mainmenu animated fadeInDown" id="mainmenu">
+        <div class="container">
+            <div class="row navigation">
+                <a href="#" class="main_logo">
+                    <img src="images/logo.png" alt="" class="main_logo_img">
+                </a>
+                <ul class="header_menu" id="header_menu">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closePhone()">&times;</a>
+                    <li><a href="#" class="header_menu_link">Dom</a></li>
+                    <li><a href="#" class="header_menu_link">Uslugi</a></li>
+                    <li><a href="#" class="header_menu_link">Karty upomnikowe</a></li>
+                    <li><a href="#" class="header_menu_link">Galeria</a></li>
+                    <li><a href="#" class="header_menu_link">Kontakty</a></li>
+                    <li><a href="#" class="header_menu_link">Rezerwacja</a></li>
+                </ul>
+                <div class="conts">
+                    <div class="phone">
+                        <p class="phone_number">+48 (012) 345 67 89</p>
+                        <button class="recall" data-toggle="modal" data-target="#recall">Popros o oddzwonienie</button>
+                    </div>
+                    <ul class="languages">
+                        <li><a href="#" class="lang active">PL</a></li>
+                        <li class="bet">|</li>
+                        <li><a href="#" class="lang">EN</a></li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button class="phone_btn" onclick="openPhone()">
+                        <img src="images/mobiphone.png" alt="" class="hamburger_img">
+                    </button>
+                    <ul class="languages_mobile">
+                        <li><a href="#" class="lang active">PL</a></li>
+                        <li class="bet">|</li>
+                        <li><a href="#" class="lang">EN</a></li>
+                    </ul>
+                    <button class="hamburger" onclick="openNav()">
+                        <img src="images/hamburger.png" alt="" class="hamburger_img">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="header_menu_mobile" id="header_menu_mobile">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li><a href="#" class="header_menu_link">Dom</a></li>
+        <li><a href="#" class="header_menu_link">Uslugi</a></li>
+        <li><a href="#" class="header_menu_link">Karty upomnikowe</a></li>
+        <li><a href="#" class="header_menu_link">Galeria</a></li>
+        <li><a href="#" class="header_menu_link">Kontakty</a></li>
+        <li><a href="#" class="header_menu_link">Rezerwacja</a></li>
+    </ul>
+
+    <div class="phone_mobile" id="phone_mobile">
+            <a href="javascript:void(0)" class="closebtn" onclick="closePhone()">&times;</a>
+        <p class="phone_number">+48 (012) 345 67 89</p>
+        <button class="recall" data-toggle="modal" data-target="#recall">Popros o oddzwonienie</button>
+    </div>
+
+    <section class="calendar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12 text-center">
+                    <div class="ava_img">
+                        <img src="images/avatar.png" alt="" class="avatar">
+                    </div>
+                    <p class="prof">masażysta</p>
+                    <p class="profname">Maja Kowalczik</p>
+                </div>
+                <div class="col-md-9 col-12 text-center">
+                    <p class="month">Październik</p>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">07.10</span>
+                                <br><span class="day">poniedziałek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">08.10</span>
+                                <br><span class="day">wtorek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">09.10</span>
+                                <br><span class="day">środa</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">10.10</span>
+                                <br><span class="day">czwartek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">11.10</span>
+                                <br><span class="day">piątek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">12.10</span>
+                                <br><span class="day">sobota</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block disabled" id="day_block" disabled>
+                                <span id="date" class="date">13.10</span>
+                                <br><span class="day">niedziela</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="info">
+                        Czas nagrywania włączony <span class="time" id="time">09.10</span>
+                    </p>
+                    <div class="times">
+                        <ul>
+                            <li>12:00</li>
+                            <li class="active">13:00</li>
+                            <li>14:00</li>
+                            <li>15:00</li>
+                            <li class="active">16:00</li>
+                            <li class="active">17:00</li>
+                            <li>18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-12 text-center">
+                    <div class="ava_img">
+                        <img src="images/avatar.png" alt="" class="avatar">
+                    </div>
+                    <p class="prof">masażysta</p>
+                    <p class="profname">Maja Kowalczik</p>
+                </div>
+                <div class="col-md-9 col-12 text-center">
+                    <p class="month">Październik</p>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">07.10</span>
+                                <br><span class="day">poniedziałek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">08.10</span>
+                                <br><span class="day">wtorek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">09.10</span>
+                                <br><span class="day">środa</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">10.10</span>
+                                <br><span class="day">czwartek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">11.10</span>
+                                <br><span class="day">piątek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">12.10</span>
+                                <br><span class="day">sobota</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block disabled" id="day_block" disabled>
+                                <span id="date" class="date">13.10</span>
+                                <br><span class="day">niedziela</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="info">
+                        Czas nagrywania włączony <span class="time" id="time">09.10</span>
+                    </p>
+                    <div class="times">
+                        <ul>
+                            <li>12:00</li>
+                            <li class="active">13:00</li>
+                            <li>14:00</li>
+                            <li>15:00</li>
+                            <li class="active">16:00</li>
+                            <li class="active">17:00</li>
+                            <li>18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-12 text-center">
+                    <div class="ava_img">
+                        <img src="images/avatar.png" alt="" class="avatar">
+                    </div>
+                    <p class="prof">masażysta</p>
+                    <p class="profname">Maja Kowalczik</p>
+                </div>
+                <div class="col-md-9 col-12 text-center">
+                    <p class="month">Październik</p>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">07.10</span>
+                                <br><span class="day">poniedziałek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">08.10</span>
+                                <br><span class="day">wtorek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">09.10</span>
+                                <br><span class="day">środa</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">10.10</span>
+                                <br><span class="day">czwartek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">11.10</span>
+                                <br><span class="day">piątek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">12.10</span>
+                                <br><span class="day">sobota</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block disabled" id="day_block" disabled>
+                                <span id="date" class="date">13.10</span>
+                                <br><span class="day">niedziela</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="info">
+                        Czas nagrywania włączony <span class="time" id="time">09.10</span>
+                    </p>
+                    <div class="times">
+                        <ul>
+                            <li>12:00</li>
+                            <li class="active">13:00</li>
+                            <li>14:00</li>
+                            <li>15:00</li>
+                            <li class="active">16:00</li>
+                            <li class="active">17:00</li>
+                            <li>18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-12 text-center">
+                    <div class="ava_img">
+                        <img src="images/avatar.png" alt="" class="avatar">
+                    </div>
+                    <p class="prof">masażysta</p>
+                    <p class="profname">Maja Kowalczik</p>
+                </div>
+                <div class="col-md-9 col-12 text-center">
+                    <p class="month">Październik</p>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">07.10</span>
+                                <br><span class="day">poniedziałek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">08.10</span>
+                                <br><span class="day">wtorek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">09.10</span>
+                                <br><span class="day">środa</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">10.10</span>
+                                <br><span class="day">czwartek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">11.10</span>
+                                <br><span class="day">piątek</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block" id="day_block">
+                                <span id="date" class="date">12.10</span>
+                                <br><span class="day">sobota</span>
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="day_block disabled" id="day_block" disabled>
+                                <span id="date" class="date">13.10</span>
+                                <br><span class="day">niedziela</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="info">
+                        Czas nagrywania włączony <span class="time" id="time">09.10</span>
+                    </p>
+                    <div class="times">
+                        <ul>
+                            <li>12:00</li>
+                            <li class="active">13:00</li>
+                            <li>14:00</li>
+                            <li>15:00</li>
+                            <li class="active">16:00</li>
+                            <li class="active">17:00</li>
+                            <li>18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row" id="container">
+                <div class="col-md-4 col-12 top_block">
+                    <p class="adress">
+                        Kacza 9 , lokal i, Warszawa
+                    </p>
+                    <p class="email">
+                        Slowianoczka@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 center_block">
+                    <img src="images/footer_logo.png" alt="" class="logo_img">
+                </div>
+                <div class="col-md-4 col-12 bottom_block">
+                    <p class="phone">
+                        +48 (012) 345 67 89
+                    </p>
+                    <p class="phone">
+                        +48 (012) 345 67 89
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="copyright_text">
+                            Słowianka Spa& Masaz © Copyright 2019.  Opracowany przez SFdevelop
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <ul class="footer_socials">
+                            <li><a href="#" class="fs_link">
+                                <img src="images/fb.png" alt="">
+                            </a></li>
+                            <li><a href="#" class="fs_link">
+                                <img src="images/insta.png" alt="">
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="recall" tabindex="-1" role="dialog" aria-labelledby="recallLabel" aria-hidden="true">
+        <div class="modal-dialog recall_modal" role="document">
+            <div class="modal-content">
+                <div class="modal_header">
+                    <h3 class="modal_title">
+                        <span>Poproś o</span> oddzwonienie
+                    </h3>
+                    <button type="button" class="close_btn" data-dismiss="modal">
+                        <img src="images/close_btn.png" alt="">
+                    </button>
+                </div>
+                <div class="modal_body">
+                    <form>
+                        <ul>
+                            <li>
+                                <input type="text" class="name" id="name" placeholder="Imię i nazwisko *">
+                            </li>
+                            <li>
+                                <input type="text" class="phone" id="phone" placeholder="Numer telefonu *">
+                            </li>
+                        </ul>
+                        <p class="form_text">
+                            Klikając przycisk, wyrażasz zgodę na przetwarzanie danych osobowych.
+                        </p>
+                        <div class="form_btn_outside">
+                            <button type="button" class="form_btn">
+                                Prześlij
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="giftcard" tabindex="-1" role="dialog" aria-labelledby="giftcardLabel" aria-hidden="true">
+        <div class="modal-dialog recall_modal" role="document">
+            <div class="modal-content">
+                <div class="modal_header">
+                    <h3 class="modal_title">
+                        <span>Zamów</span> kartę podarunkową
+                    </h3>
+                    <button type="button" class="close_btn" data-dismiss="modal">
+                        <img src="images/close_btn.png" alt="">
+                    </button>
+                </div>
+                <div class="modal_body">
+                    <form>
+                        <ul>
+                            <li>
+                                <input type="text" class="name" id="name" placeholder="Imię i nazwisko *">
+                            </li>
+                            <li>
+                                <input type="text" class="phone" id="phone" placeholder="Numer telefonu *">
+                            </li>
+                            <li>
+                                <input type="text" class="object" id="object" placeholder="Nazwa odbiorcy karty *">
+                            </li>
+                        </ul>
+                        <p class="form_text">
+                            Klikając przycisk, wyrażasz zgodę na przetwarzanie danych osobowych.
+                        </p>
+                        <div class="form_btn_outside">
+                            <button type="button" class="form_btn">
+                                Prześlij
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/moment-with-locales.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

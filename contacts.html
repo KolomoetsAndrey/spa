@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>...</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+    <!--ToTop-->
+    <button class="toTop" onclick="topFunction()" id="toTop"></button>
+    <!--End ToTop-->
+
+    <div class="mainmenu animated fadeInDown" id="mainmenu">
+        <div class="container">
+            <div class="row navigation">
+                <a href="#" class="main_logo">
+                    <img src="images/logo.png" alt="" class="main_logo_img">
+                </a>
+                <ul class="header_menu">
+                    <li><a href="#" class="header_menu_link">Dom</a></li>
+                    <li><a href="#" class="header_menu_link">Uslugi</a></li>
+                    <li><a href="#" class="header_menu_link">Karty upomnikowe</a></li>
+                    <li><a href="#" class="header_menu_link">Galeria</a></li>
+                    <li><a href="#" class="header_menu_link">Kontakty</a></li>
+                    <li><a href="#" class="header_menu_link">Rezerwacja</a></li>
+                </ul>
+                <div class="conts">
+                    <div class="phone">
+                        <p class="phone_number">+48 (012) 345 67 89</p>
+                        <button class="recall" data-toggle="modal" data-target="#recall">Popros o oddzwonienie</button>
+                    </div>
+                    <ul class="languages">
+                        <li><a href="#" class="lang active">PL</a></li>
+                        <li class="bet">|</li>
+                        <li><a href="#" class="lang">EN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12 text-center">
+                    <div class="contact_block">
+                        <div class="elipse">
+                            <img src="images/phone.png" alt="">
+                        </div>
+                        <h3 class="contact_block_title">
+                            Telefony
+                        </h3>
+                        <ul class="phones">
+                            <li>+48 (012) 345 67 89</li>
+                            <li>+48 (012) 345 67 89</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <div class="contact_block">
+                        <div class="elipse">
+                            <img src="images/email.png" alt="">
+                        </div>
+                        <h3 class="contact_block_title">
+                            E-mail
+                        </h3>
+                        <ul class="mails">
+                            <li>Slowianoczka@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <div class="contact_block">
+                        <div class="elipse">
+                            <img src="images/adress.png" alt="">
+                        </div>
+                        <h3 class="contact_block_title">
+                            Adres  
+                        </h3>
+                        <ul class="adress">
+                            <li>ulica Kacza 9, lok. I, 01-013, Warszawa, Wola</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section_title">
+                        <span>Formularz</span>
+                        <br>opinii
+                    </h2>
+                    <p class="section_text">
+                        Dziękujemy za zainteresowanie salonem masażu Candle. 
+                        Jeśli masz jakieś pytania, napisz do nas, a my odpowiemy na nie
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <ul class="names">
+                            <li>
+                                <input type="text" class="name" id="name" placeholder="Twoje imie *">
+                            </li>
+                            <li>
+                                <input type="text" class="email" id="email" placeholder="Twój email *">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="textarea">
+                                <textarea id="ques" rows="5" class="ques" placeholder="Twoje pytanie *"></textarea>
+                            </li>
+                        </ul>
+                        <div class="form_btn_outside">
+                            <button type="button" class="form_btn">
+                                Prześlij
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row" id="container">
+                <div class="col-md-4 col-12 top_block">
+                    <p class="adress">
+                        Kacza 9 , lokal i, Warszawa
+                    </p>
+                    <p class="email">
+                        Slowianoczka@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 center_block">
+                    <img src="images/footer_logo.png" alt="" class="logo_img">
+                </div>
+                <div class="col-md-4 col-12 bottom_block">
+                    <p class="phone">
+                        +48 (012) 345 67 89
+                    </p>
+                    <p class="phone">
+                        +48 (012) 345 67 89
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="copyright_text">
+                            Słowianka Spa& Masaz © Copyright 2019.  Opracowany przez SFdevelop
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <ul class="footer_socials">
+                            <li><a href="#" class="fs_link">
+                                <img src="images/fb.png" alt="">
+                            </a></li>
+                            <li><a href="#" class="fs_link">
+                                <img src="images/insta.png" alt="">
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="recall" tabindex="-1" role="dialog" aria-labelledby="recallLabel" aria-hidden="true">
+        <div class="modal-dialog recall_modal" role="document">
+            <div class="modal-content">
+                <div class="modal_header">
+                    <h3 class="modal_title">
+                        <span>Poproś o</span> oddzwonienie
+                    </h3>
+                    <button type="button" class="close_btn" data-dismiss="modal">
+                        <img src="images/close_btn.png" alt="">
+                    </button>
+                </div>
+                <div class="modal_body">
+                    <form>
+                        <ul>
+                            <li>
+                                <input type="text" class="name" id="name" placeholder="Imię i nazwisko *">
+                            </li>
+                            <li>
+                                <input type="text" class="phone" id="phone" placeholder="Numer telefonu *">
+                            </li>
+                        </ul>
+                        <p class="form_text">
+                            Klikając przycisk, wyrażasz zgodę na przetwarzanie danych osobowych.
+                        </p>
+                        <div class="form_btn_outside">
+                            <button type="button" class="form_btn">
+                                Prześlij
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="giftcard" tabindex="-1" role="dialog" aria-labelledby="giftcardLabel" aria-hidden="true">
+        <div class="modal-dialog recall_modal" role="document">
+            <div class="modal-content">
+                <div class="modal_header">
+                    <h3 class="modal_title">
+                        <span>Zamów</span> kartę podarunkową
+                    </h3>
+                    <button type="button" class="close_btn" data-dismiss="modal">
+                        <img src="images/close_btn.png" alt="">
+                    </button>
+                </div>
+                <div class="modal_body">
+                    <form>
+                        <ul>
+                            <li>
+                                <input type="text" class="name" id="name" placeholder="Imię i nazwisko *">
+                            </li>
+                            <li>
+                                <input type="text" class="phone" id="phone" placeholder="Numer telefonu *">
+                            </li>
+                            <li>
+                                <input type="text" class="object" id="object" placeholder="Nazwa odbiorcy karty *">
+                            </li>
+                        </ul>
+                        <p class="form_text">
+                            Klikając przycisk, wyrażasz zgodę na przetwarzanie danych osobowych.
+                        </p>
+                        <div class="form_btn_outside">
+                            <button type="button" class="form_btn">
+                                Prześlij
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
