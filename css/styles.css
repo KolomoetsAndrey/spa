@@ -860,7 +860,7 @@ footer .copyright .footer_socials .fs_link:hover {
 .gallery .gallery_img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin: 5px auto;
 }
 .services {
   position: relative;
@@ -1443,6 +1443,7 @@ footer .copyright .footer_socials .fs_link:hover {
   }
   .services {
     padding-top: 100px;
+    background-size: 100%;
   }
   .services .info_box {
     margin-top: 30px;
@@ -1460,6 +1461,18 @@ footer .copyright .footer_socials .fs_link:hover {
   .services .service_text {
     text-align: center;
   }
+  .article {
+    padding-top: 100px;
+    background-size: 100%;
+  }
+  .article .btn_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .article .btn_block .service_btn {
+    order: 1;
+    margin: 20px auto;
+  }
   footer {
     margin-top: 0;
   }
@@ -1473,6 +1486,34 @@ footer .copyright .footer_socials .fs_link:hover {
   footer .bottom_block p {
     text-align: center;
     color: #44261C;
+  }
+  .contacts {
+    padding-top: 100px;
+    background-size: 100%;
+  }
+  .contacts .bblock {
+    margin-bottom: 50px;
+  }
+  .contacts .contact_block .contact_block_title {
+    font-size: 18px;
+  }
+  .contacts .contact_block .phones,
+  .contacts .contact_block .mails,
+  .contacts .contact_block .adress {
+    font-size: 14px;
+    color: #44261C;
+  }
+  .gallery {
+    padding-top: 100px;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 822px) {
+  .gallery .card-columns {
+    margin: 5px auto;
+  }
+  .gallery .gallery_img {
+    width: 80%;
   }
 }
 @media screen and (max-width: 764px) {
@@ -1632,6 +1673,12 @@ footer .copyright .footer_socials .fs_link:hover {
   .services .info_box {
     margin-bottom: 20px;
   }
+  .article .btn_block .service_link {
+    font-size: 23px;
+  }
+  .contacts form .form_btn {
+    font-size: 23px;
+  }
 }
 @media screen and (max-width: 500px) {
   .mainmenu {
@@ -1639,5 +1686,44 @@ footer .copyright .footer_socials .fs_link:hover {
   }
   .mainmenu .phone_btn .hamburger_img {
     width: 16px;
+  }
+  .article .article_title::before {
+    height: 250px;
+    width: 250px;
+    top: 0;
+    left: -100px;
+  }
+  .article .article_title .atitle {
+    font-size: 18px;
+    width: 50%;
+    margin-left: -50px;
+    padding-top: 50px;
+  }
+  .article .article_title .price {
+    margin: 0;
+    padding: 0;
+    margin-left: -50px;
+  }
+  .article .article_title .price li {
+    text-align: left;
+    font-size: 16px;
+  }
+  .article .article_title .percent {
+    margin: 0;
+    padding: 0;
+    margin-left: -50px;
+  }
+  .article .article_title .percent li {
+    text-align: left;
+    font-size: 25px;
+  }
+  .contacts form input {
+    width: 94%;
+  }
+  .contacts form ul li {
+    width: 100%;
+  }
+  .contacts form .names {
+    flex-direction: column;
   }
 }

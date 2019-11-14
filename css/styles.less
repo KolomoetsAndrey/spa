@@ -1063,7 +1063,7 @@ footer {
     .gallery_img {
         width: 100%;
         height: auto;
-        margin-bottom: 10px;
+        margin: 5px auto;
     }
 }
 
@@ -1776,6 +1776,7 @@ footer {
 
     .services {
         padding-top: 100px;
+        background-size: 100%;
 
         .info_box {
             margin-top: 30px;
@@ -1799,6 +1800,21 @@ footer {
         }
     }
 
+    .article {
+        padding-top: 100px;
+        background-size: 100%;
+
+        .btn_block {
+            display: flex;
+            flex-direction: column;
+
+            .service_btn {
+                order: 1;
+                margin: 20px auto;
+            }
+        }
+    }
+
     footer {
         margin-top: 0;
 
@@ -1816,6 +1832,42 @@ footer {
                 text-align: center;
                 color: #44261C;
             }
+        }
+    }
+
+    .contacts {
+        padding-top: 100px;
+        background-size: 100%;
+
+        .bblock {
+            margin-bottom: 50px;
+        }
+
+        .contact_block {
+            .contact_block_title {
+                font-size: 18px;
+            }
+            .phones, .mails, .adress {
+                font-size: 14px;
+                color: #44261C;
+            }
+        }
+    }    
+
+    .gallery {
+        padding-top: 100px;
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 822px) {
+    .gallery {
+        .card-columns {
+            margin: 5px auto;
+        }
+
+        .gallery_img {
+            width: 80%;
         }
     }
 }
@@ -2021,6 +2073,18 @@ footer {
             margin-bottom: 20px;
         }
     }
+
+    .article {
+        .btn_block {
+            .service_link {
+                font-size: 23px;
+            }
+        }
+    }
+
+    .contacts form .form_btn {
+        font-size: 23px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -2030,6 +2094,64 @@ footer {
         .phone_btn {
             .hamburger_img {
                 width: 16px;
+            }
+        }
+    }
+
+    .article {
+        .article_title {
+
+            &::before {
+                height: 250px;
+                width: 250px;  
+                top: 0;
+                left: -100px;
+            }
+
+            .atitle {
+                font-size: 18px;
+                width: 50%;
+                margin-left: -50px;
+                padding-top: 50px;
+            }
+
+            .price {
+                margin: 0;
+                padding: 0;
+                margin-left: -50px;
+
+                li {
+                    text-align: left;
+                    font-size: 16px;
+                }
+            }
+
+            .percent {
+                margin: 0;
+                padding: 0;
+                margin-left: -50px;
+
+                li {
+                    text-align: left;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .contacts {
+        form {
+            input {
+                width: 94%;
+            }
+
+            ul {
+                li {
+                    width: 100%;
+                }
+            }
+            .names {
+                flex-direction: column;
             }
         }
     }
