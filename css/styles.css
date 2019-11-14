@@ -1441,6 +1441,39 @@ footer .copyright .footer_socials .fs_link:hover {
   .fotos .img_link {
     padding: 10px 30px;
   }
+  .services {
+    padding-top: 100px;
+  }
+  .services .info_box {
+    margin-top: 30px;
+    order: 1;
+  }
+  .services .image_box {
+    order: -1;
+  }
+  .services .service_btn {
+    margin: 10px auto;
+  }
+  .services .service_title {
+    text-align: center !important;
+  }
+  .services .service_text {
+    text-align: center;
+  }
+  footer {
+    margin-top: 0;
+  }
+  footer .top_block p {
+    text-align: center;
+    color: #44261C;
+  }
+  footer .bottom_block {
+    margin-bottom: 20px;
+  }
+  footer .bottom_block p {
+    text-align: center;
+    color: #44261C;
+  }
 }
 @media screen and (max-width: 764px) {
   header {
@@ -1580,22 +1613,24 @@ footer .copyright .footer_socials .fs_link:hover {
   .call form .form_btn {
     font-size: 23px;
   }
-  footer {
-    margin-top: 0;
-  }
-  footer .top_block p {
-    text-align: center;
-    color: #44261C;
-  }
-  footer .bottom_block {
-    margin-bottom: 20px;
-  }
-  footer .bottom_block p {
-    text-align: center;
-    color: #44261C;
-  }
   .recall_modal form .form_btn {
     font-size: 23px;
+  }
+  .form_btn {
+    font-size: 23px;
+  }
+  .services .service_title {
+    font-size: 18px;
+  }
+  .services .service_text {
+    font-size: 14px;
+  }
+  .services .service_link {
+    font-size: 23px;
+  }
+  .services .image_box,
+  .services .info_box {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 500px) {

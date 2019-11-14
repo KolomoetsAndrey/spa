@@ -70,7 +70,10 @@
     </div>
 
     <ul class="header_menu_mobile" id="header_menu_mobile">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li class="menu_header">
+            <img src="images/mobi_logo.png" alt="" class="menu_header_logo">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </li>
         <li><a href="#" class="header_menu_link">Dom</a></li>
         <li><a href="#" class="header_menu_link">Uslugi</a></li>
         <li><a href="#" class="header_menu_link">Karty upomnikowe</a></li>
@@ -79,11 +82,16 @@
         <li><a href="#" class="header_menu_link">Rezerwacja</a></li>
     </ul>
 
-    <div class="phone_mobile" id="phone_mobile">
+    <ul class="phone_mobile" id="phone_mobile">
+        <li class="menu_header">
+            <img src="images/mobi_logo.png" alt="" class="menu_header_logo">
             <a href="javascript:void(0)" class="closebtn" onclick="closePhone()">&times;</a>
-        <p class="phone_number">+48 (012) 345 67 89</p>
-        <button class="recall" data-toggle="modal" data-target="#recall">Popros o oddzwonienie</button>
-    </div>
+        </li>
+        <li class="phones_block">
+            <p class="phone_number">+48 (012) 345 67 89</p>
+            <button class="recall" data-toggle="modal" data-target="#recall">Popros o oddzwonienie</button>
+        </li>
+    </ul>
 
     <section class="calendar">
         <div class="container">
